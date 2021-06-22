@@ -1,7 +1,8 @@
 import express from 'express';
+import { testEnvironmentVariable  } from '../settings';
 
 const indexRouter = express.Router();
 
-indexRouter.get('/', (req, res) => res.status(200).json({ message: 'Bienvenue sur l\'api du système de gestion des utilisateurs et des annonces' }));
+indexRouter.get('/', (req, res) => res.status(200).json({ message: testEnvironmentVariable  }));
 
 export default indexRouter;
