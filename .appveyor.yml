@@ -1,10 +1,8 @@
 environment:
-    matrix:
-        - nodejs_version: "12"
+  matrix:
+  - nodejs_version: "12"
 install:
-    - yarn
+  - yarn
 test_script:
-    - yarn test
-build: false
-
-
+  - yarn test
+build: off
