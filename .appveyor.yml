@@ -9,7 +9,7 @@ build: off
 before_test:
     - SET PGUSER=postgres
     - SET PGPASSWORD=postgres
-    - PATH=C:\Program Files\PostgreSQL\12\bin\;%PATH%
+    - PATH=C:\Program Files\PostgreSQL\13\bin\;%PATH%
     - createdb testdb
 services:
     - postgresql134
