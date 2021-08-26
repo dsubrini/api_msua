@@ -1,7 +1,7 @@
 import { expect, BASE_URL, server } from './setup';
 
 describe('Messages', () => {
-    it('get messages page', done => {
+    it('get messages page', (done) => {
         server
             .get(`${BASE_URL}/messages`)
             .expect(200)
