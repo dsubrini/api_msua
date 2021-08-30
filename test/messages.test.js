@@ -15,4 +15,22 @@ describe('Messages', () => {
                 done();
             });
     });
+
+    it('Post message', done => {
+        const data = { name: 'some name', message: 'new message' };
+        server
+            .post(`${BASE_URL}/messages`)
+            .send(data)
+            .expect(200)
+            .end((res, err) => {
+                expect(res.status).to.equal(200);
+                expect(res.body).to.be.instanceOf(Array);
+                res.body.messages.forEach(m => {
+                    expect(m).to.have.property('id');
+                    expect(m).to.have.property('name', data.name);
+                    expect(m).to.have.property('message', data.message);
+                });
+                done();
+            });
+    });
 });
