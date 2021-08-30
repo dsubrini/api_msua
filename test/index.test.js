@@ -7,7 +7,7 @@ describe('Index de la page de test', () => {
             .expect(200)
             .end((err, res) => {
                 expect(res.status).to.equal(200);
-                expect(res.body.message).to.equal('variable bientot disponible');
+                expect(res.body.message).to.equal('hello world');
                 done();
             });
     });
