@@ -6,6 +6,8 @@ import {
 
 dotenv.config();
 
+const connectionString = `postgresql://${pguser}:${pgpswd}@${pghost}:${pgport}/${pgdb}`;
+
 export const pool = new Pool({
-    pguser, pgpswd, pgport, pgdb, pghost
+    connectionString
 });
