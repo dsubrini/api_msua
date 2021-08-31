@@ -22,9 +22,9 @@ describe('Messages', () => {
             .post(`${BASE_URL}/messages`)
             .send(data)
             .expect(200)
-            .end((res, err) => {
+            .end((err, res) => {
                 expect(res.status).to.equal(200);
-                expect(res.body).to.be.instanceOf(Array);
+                expect(res.body.messages).to.be.instanceOf(Array);
                 res.body.messages.forEach(m => {
                     expect(m).to.have.property('id');
                     expect(m).to.have.property('name', data.name);
