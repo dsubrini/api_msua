@@ -9,6 +9,6 @@ describe('Index de la page de test', () => {
                 expect(res.status).to.equal(200);
                 expect(res.body.message).to.equal('hello world');
                 done();
-            });
+            }).timeout(10000);
     });
 });
