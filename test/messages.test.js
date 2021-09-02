@@ -13,7 +13,7 @@ describe('Messages', () => {
                     expect(m).to.have.property('message');
                 });
                 done();
-            });
+            }).catch(done);
     });
 
     it('Post message', done => {
@@ -31,6 +31,7 @@ describe('Messages', () => {
                     expect(m).to.have.property('message', `SAYS: ${data.message}`);
                 });
                 done();
-            });
+            })
+            .catch(done);
     });
 });
