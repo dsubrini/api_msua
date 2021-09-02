@@ -2,7 +2,6 @@
     "name": "api-msua",
     "version": "0.0.0",
     "private": false,
-    "type": "module",
     "scripts": {
         "prestart": "babel ./src --out-dir build",
         "start": "node ./src/bin/www",
