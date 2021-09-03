@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-import debug from 'debug';
+import debug  from 'debug';
 import http from 'http';
-import app from '../app';
+import app  from '../app.js';
 
 /**
  * Normalize a port into a number, string or false
