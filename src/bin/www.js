@@ -8,8 +8,7 @@ import debugLib from 'debug';
 import http from 'http';
 import app from '../app';
 
-const debug = debugLib('api_msua:start');
-
+const debug = debugLib('api_msua:server');
 
 /**
  * Normalize a port into a number, string or false
