@@ -12,7 +12,10 @@ Création d'une API qui facilite les échanges entre les acteurs du monde profes
 Elle accompagne ces acteurs dans le but
 d'éviter de se perdre avec les différents intermédiaires et/ou les différents fournisseurs disponibles !
 
+- Liste des commandes à effectuer à la racine du projet
+    - Installation : `` yarn install``
+    - Tests : `` yarn test ``
+    - Dev : `` yarn startdev ``
+    - URL serveur dev : `` http://localhost:3000 ``
 
-- Liste des commandes à effectuer au niveau du fichier ``package.json``
-    - `` > yarn ``
-    - `` > nodemon ``
+Merci à [Orji Chidi Matthew](https://github.com/chidimo) avec son [article](https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/) et son [repo](https://github.com/chidimo/Express-API-Template) qui m'ont apporter une base pour ce projet.
