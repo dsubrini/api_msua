@@ -4,11 +4,9 @@
  * Module dependencies.
  */
 
-import app from '../app';
-import debugLib from 'debug';
+import debug from 'debug';
 import http from 'http';
-
-const debug = debugLib('api_msua:server');
+import app from '../app';
 
 /**
  * Normalize a port into a number, string or false
