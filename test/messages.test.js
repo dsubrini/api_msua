@@ -1,7 +1,7 @@
 import { expect, BASE_URL, server } from './setup';
 
 describe('Messages', () => {
-    it('get messages page', done => {
+    it('Afficher la page des messages', done => {
         server
             .get(`${BASE_URL}/messages`)
             .expect(200)
@@ -16,7 +16,7 @@ describe('Messages', () => {
             });
     });
 
-    it('Post message', done => {
+    it('Ajouter un message', done => {
         const data = { name: 'some name', message: 'new message' };
         server
             .post(`${BASE_URL}/messages`)
