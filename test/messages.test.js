@@ -1,7 +1,7 @@
 import { expect, BASE_URL, server } from './setup';
 
 describe('Messages', () => {
-    it('Afficher la page des messages', done => {
+    it('Afficher la page des messages', () => {
         server
             .get(`${BASE_URL}/messages`)
             .expect(200)
@@ -12,11 +12,10 @@ describe('Messages', () => {
                     expect(m).to.have.property('name');
                     expect(m).to.have.property('message');
                 });
-                done(err);
             });
     });
 
-    it('Ajouter un message', done => {
+    it('Ajouter un message', () => {
         const data = { name: 'some name', message: 'new message' };
         server
             .post(`${BASE_URL}/messages`)
@@ -30,7 +29,6 @@ describe('Messages', () => {
                     expect(m).to.have.property('name', data.name);
                     expect(m).to.have.property('message', `MODIFICATION : ${data.message}`);
                 });
-                done(err);
             });
     });
 });
