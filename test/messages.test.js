@@ -12,7 +12,7 @@ describe('Messages', () => {
                     expect(m).to.have.property('name');
                     expect(m).to.have.property('message');
                 });
-                done();
+                done(err);
             });
     });
 
@@ -30,7 +30,7 @@ describe('Messages', () => {
                     expect(m).to.have.property('name', data.name);
                     expect(m).to.have.property('message', `MODIFICATION : ${data.message}`);
                 });
-                done();
+                done(err);
             });
     });
 });

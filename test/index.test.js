@@ -8,7 +8,7 @@ describe('Index de la page de test', () => {
             .end((err, res) => {
                 expect(res.status).to.equal(200);
                 expect(res.body.message).to.equal('hello world');
-                done();
+                done(err);
             });
     });
 });
