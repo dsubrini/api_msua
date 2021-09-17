@@ -9,5 +9,5 @@ dotenv.config();
 const connectionString = `postgresql://${pguser}:${pgpswd}@${pghost}:${pgport}/${pgdb}`;
 
 export const pool = new Pool({
-    connectionString
+    connectionString,
 });

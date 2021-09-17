@@ -1,10 +1,14 @@
 import { pool } from '../models/pools';
 import {
-    insertMessages, createMessageTable, dropMessageTable,
-    createUserTable, insertUser, dropUserTable
+    insertMessages,
+    createMessageTable,
+    dropMessageTable,
+    createUserTable,
+    insertUser,
+    dropUserTable,
 } from './queries';
 
-export const executeQueryArray = async arr => new Promise(resolve => {
+export const executeQueryArray = async (arr) => new Promise((resolve) => {
     const stop = arr.length;
     arr.forEach(async (q, index) => {
         await pool.query(q);
