@@ -35,6 +35,7 @@
         "@babel/register": "^7.15.3",
         "@babel/runtime": "^7.15.4",
         "chai": "^4.3.4",
+        "chai-uuid": "^1.0.6",
         "coveralls": "^3.1.1",
         "eslint": "^7.32.0",
         "eslint-config-airbnb-base": "^14.2.1",
