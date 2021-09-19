@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-import debug from 'debug';
+const debug = require('debug');
 import http from 'http';
 import app from '../app';
 
